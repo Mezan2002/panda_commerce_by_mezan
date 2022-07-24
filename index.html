@@ -19,9 +19,9 @@
   <body>
     <!-- header start -->
     <header>
-      <nav class="navbar navbar-expand-lg bg-light">
+      <nav class="navbar navbar-expand-lg fixed-top bg-light">
         <div class="container">
-          <a class="navbar-brand" href="#"
+          <a class="navbar-brand" href="index.html"
             ><img src="images/logo.png" alt="panda commerce logo"
           /></a>
           <button
@@ -38,7 +38,9 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#slider"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#shoes">Shoes</a>
@@ -47,7 +49,7 @@
                 <a class="nav-link" href="#backpack">Backpack</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Subscribe</a>
+                <a class="nav-link" href="#subscribe">Subscribe</a>
               </li>
             </ul>
           </div>
@@ -57,7 +59,7 @@
     <!-- header end -->
 
     <!-- banner slider start  -->
-    <section class="mt-5">
+    <section class="mt-5" id="slider">
       <div class="container bg-info border rounded">
         <div
           id="carouselExampleControls"
@@ -308,8 +310,37 @@
         </div>
       </section>
       <!-- backpack categorie end -->
-    </main>
 
+      <!-- subscribe form start -->
+      <section
+        style="height: 300px"
+        class="container bg-info rounded-3 d-flex align-items-center justify-content-center"
+      >
+        <div class="form_content" id="subscribe">
+          <h2>LET'S STAY IN TOUCH</h2>
+          <p>Get updates on sales, specials and more</p>
+          <form>
+            <div class="mb-1">
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </section>
+      <!-- subscribe form end -->
+    </main>
+    <!-- footer start -->
+    <footer class="text-center mt-5 py-5 shadow-lg">
+      <small
+        >Panda Commerce by Mezanur Rahman | ©2022 | All rights reserved.</small
+      >
+    </footer>
+    <!-- footer end -->
     <!-- bootstrap js cdn link start -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
